@@ -4,7 +4,7 @@
  * Description:
  * Author: jogeonhyeong-ui-MacBook-Pro
  *
- * Last modified: Thu Oct 25, 2018 11:16PM
+ * Last modified: Fri Oct 26, 2018 12:28AM
  */
 
 #ifndef _01_KNAPSACK_H
@@ -14,11 +14,12 @@ struct PW {
   double p, w;
 };
 
-void TraceBack(double p[], double w[], PW pair[], int x[], double m[], int n);
+void TraceBack(double p[], double w[], PW pair[], int b[], int x[], double m,
+                int n);
 
 void DKnapsack(double p[], double w[], int x[], int n, double m);
 
-int Largest(PW* pair, double w[], int t, int h, int i, double m);
+int Largest(PW pair[], double w[], int t, int h, int i, double m);
 
 int BinarySearch(PW pair[], int start, int end, double p, double w);
 
