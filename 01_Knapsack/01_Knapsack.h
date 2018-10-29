@@ -4,15 +4,15 @@
  * Description:
  * Author: jogeonhyeong-ui-MacBook-Pro
  *
- * Last modified: Fri Oct 26, 2018 12:28AM
+ * Last modified: Fri Oct 26, 2018 12:35AM
  */
 
 #ifndef _01_KNAPSACK_H
 #define _01_KNAPSACK_H
 
-struct PW {
+typedef struct pw {
   double p, w;
-};
+} PW;
 
 void TraceBack(double p[], double w[], PW pair[], int b[], int x[], double m,
                 int n);
